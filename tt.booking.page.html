@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>tourism booking</title>
+    </head>
+    <style>
+        body{
+            border: 5px solid lightgreen;
+            margin: 50px;
+            width: 65%;
+            margin-left: 20%;
+            background-color:rgb(245, 216, 226);
+            min-width: 800px;
+        }
+        #wrap{
+            margin:20px 20px;
+            padding-left: 20px;
+            width:93%;
+            background-color: black;
+        }
+        p{
+            color: lavender;
+            text-transform: capitalize;
+        }
+        h2{
+            color: lavender;
+            text-transform: uppercase;
+            padding-top: 5px;
+        }
+        #left{
+            float: left;
+            width: 45%;
+        
+        }
+        #right{
+            float: right;
+            width: 45%;
+        }
+        .clear{
+            clear: both;
+        }
+        #foot{
+            text-align: center;border: 2px dashed limegreen ;
+             margin: 20px 300px;
+             text-decoration: none;
+             padding-bottom: 5px;
+        }
+        #foot:hover{
+            background-color: peru;
+        }
+        
+
+    </style>
+    <body>
+        <div id="wrap">
+      <h2>vehicle and address booking</h2>
+      <div id="left">
+        <form  method="get">
+         <p>   <label >booking persone name:</label><br>
+            <input type="text" name="person" id="name" placeholder="enter your name" required></p>
+        <p><label>phone number:</label><br>
+        <input type="text" id="phonr" name="phone" placeholder="enter your phone number" pattern="[0-9]{10}" required></p>
+        <p><label>number of person: (maximum 25 persons)</label><br>
+        <input type="number" id="number" name="person" placeholder="enter the number" max="25" min="1" size="10" required></p>
+        <p><label>register your address <br><textarea name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea></label></p>
+        <p><label> vehicle type : </label><br>
+        <select name="vechical" id="vehical">
+            <option value="mini car shift"> shift mini car</option>
+            <option value="accent normal">accent normal</option>
+            <option value="toyoto "> toyoto</option>
+            <option value="minijeep">minijeep</option>
+            <option value="jeep large">jeep large</option>
+            <option value="minivan">minivan</option>
+            <option value="van nonA/C">van nonA/C</option>
+            <option value="A/C van">A/C van</option>
+            <option value="minibus nonA/C">mini bu nonA/C</option>
+            <option value="mini bus A/C">mini bus A/C</option>
+            
+        </select></p>
+        <p><input type="submit"></p>
+       
+        </form>
+        </div>
+        <div id="right">
+        <p> <img src="tt.vehical (1).jpg" width="300px" height="150px">  </p> <p><img src="tt.vehical (3).jpg"width="300px" height="150px" >
+            <p> <img src="tt.vehical (2).jpg"width="300px" height="150px" ></p>
+        </div>
+        <br class="clear">
+        <p id="foot"><a href="tt.home.page.html">back to home page</a></p>
+        </div>
+    </body>
+</html>
